@@ -55,5 +55,106 @@ main{
 footer{
     background-color: transparent;
     width: 100%;
+    height: auto;
+}
+
+#footer1{
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    color: #333;
+}
+.boxfooter1{
+    border: 1px solid black;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.boxfooter2{
+    border: 1px solid black;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footerList{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerList li{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.boxfooter3{
+    border: 1px solid black;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.boxfooter3 button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.boxfooter4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.boxfooter4 ul{
+    padding: 0;
+}
+
+.boxfooter4 li{
+    margin: 0;
+    padding: 5;
+    font-size: 2em;
+}
+
+#button1{
+    background-color: #ff3;
+}
+
+#button2{
+    background-color: #f44;
+}
+
+.boxfooter3 a{
+    color: #333;
+}
+
+.boxfooter4{
+    border: 1px solid black;
+    width: 25%;
+    height: 100%;
+}
+#footer2{
+    width: 100%;
     height: 100px;
+    border: 1px solid yellow;
 }
