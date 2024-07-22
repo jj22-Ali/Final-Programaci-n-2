@@ -1,0 +1,9 @@
+{
+    "productos":[
+        {
+            "imagen": "../img/banana.jpg",
+            "nombre": "Banana",
+            "precio": "$3000/kg"
+        }
+    ]
+}

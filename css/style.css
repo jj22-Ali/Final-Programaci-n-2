@@ -25,6 +25,10 @@ nav{
     justify-content: space-around;
 }
 
+#nav-items{
+    box-sizing: border-box;
+}
+
 #logo{
     letter-spacing: 2px;
 }
@@ -51,6 +55,43 @@ a{
 
 main{
     flex-grow: 1;
+}
+
+.productoContainer{
+
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #444;
+
+}
+
+#container-frutas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.boxVentaFruta{
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 300px;
+    width: 23%;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.boxVentaFruta img {
+    width: 100%;
+    object-fit: cover;
+}
+.boxVentaFruta h6, p{
+    margin: 10px 0;
 }
 
 footer{
@@ -235,6 +276,16 @@ footer{
 }
 
 @media (max-width: 480px) {
+
+    #nav-items{
+        font-size: 0.8em;
+    }
+    #nav-items ul{
+        padding: 0;
+    }
+    #nav-items li{
+        padding: 10px;
+    }
 
     .boxfooter1, .boxfooter2, .boxfooter3, .boxfooter4 {
         width: 100%;
