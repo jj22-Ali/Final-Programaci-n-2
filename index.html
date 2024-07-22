@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
                     <li id="active"><a href="index.html">INICIO</a></li>
                     <li><a href="pages/sucursales.html">SUCURSALES</a></li>
                     <li><a href="pages/iniciarSesion.html">INICIAR SESION</a></li>
-                    <li><a href="pages/carrito.html">CARRITO</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><a href="pages/carrito.html"><span id="cuenta-carrito">0</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -26,25 +26,7 @@
     <main>
         <section class="productoContainer">
             <h1>Productos</h1>
-            <div id="container-frutas">
-                <div class="boxVentaFruta">
-                    <img src="img/frutas/banana.jpg" alt="">
-                    <p>Banana Ecuatoriana</p>
-                    <p>$3000 KG</p>
-                </div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-                <div class="boxVentaFruta"></div>
-
-            </div>
+            <div id="container-frutas"></div>
         </section>
     </main>
     <footer>
@@ -94,5 +76,7 @@
             <p>Desarrolado por JJAF</p>
         </div>
     </footer>
+    <script src="js/frutas.js"></script>
+    <script src="js/servicioCarrito.js"></script>
 </body>
 </html>

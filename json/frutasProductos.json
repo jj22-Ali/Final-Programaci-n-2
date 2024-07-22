@@ -1,9 +1,40 @@
 {
     "productos":[
-        {
-            "imagen": "../img/banana.jpg",
+        {   
+            "id":1,
+            "imagen": "../img/frutas/banana.jpg",
             "nombre": "Banana",
             "precio": "$3000/kg"
+        },
+        {   
+            "id":2,
+            "imagen": "../img/frutas/manzana.jpg",
+            "nombre": "Manzana",
+            "precio": "$5500/kg"
+        },
+        {   
+            "id":3,
+            "imagen": "../img/frutas/pera.jpg",
+            "nombre": "Pera",
+            "precio": "$4500/kg"
+        },
+        {   
+            "id":4,
+            "imagen": "../img/frutas/durazno.jpg",
+            "nombre": "Durazno",
+            "precio": "$6500/kg"
+        },
+        {   
+            "id":5,
+            "imagen": "../img/frutas/naranja.jpg",
+            "nombre": "Naranja",
+            "precio": "$1500/kg"
+        },
+        {   
+            "id":6,
+            "imagen": "../img/frutas/mandarina.jpg",
+            "nombre": "Mandarina",
+            "precio": "$1800/kg"
         }
     ]
 }

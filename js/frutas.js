@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
         const container = document.getElementById("container-frutas");
 
-        data.productos.foreach(producto => {
+        data.productos.forEach(producto => {
 
             const ventaFrutra = document.createElement("div");
             ventaFrutra.className = "boxVentaFruta";
@@ -15,12 +15,21 @@ document.addEventListener("DOMContentLoaded", () => {
             nombreFruta.textContent = producto.nombre;
             const precioFruta = document.createElement("p");
             precioFruta.textContent = producto.precio;
+            const btnFruta = document.createElement("button");
+            btnFruta.textContent = "Agregar al carrito";
+
+            // Agregar el event listener al botón individualmente
+            btnFruta.addEventListener("click", () => agregarAlCarrito(producto));
+
 
             ventaFrutra.appendChild(imgFruta);
             ventaFrutra.appendChild(nombreFruta);
             ventaFrutra.appendChild(precioFruta);
+            ventaFrutra.appendChild(btnFruta)
             container.appendChild(ventaFrutra);
+
+
         });
     })
     .catch(error => console.error('Error al cargar el JSON:', error));
-})
+});
