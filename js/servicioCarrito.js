@@ -54,10 +54,17 @@ const cuentaCarritoElement = document.getElementById("cuenta-carrito");
 
 function actualizarNumeroCarrito(){
     const memoria = JSON.parse(localStorage.getItem("frutas"));
-    //reduce sirve para agarrar un arrays de cosas y reducirlos a un solo valor
-    const cuenta = memoria.reduce((acum, current) => acum+current.cantidad,0);
+    if(memoria && memoria.length > 0){
+            //reduce sirve para agarrar un arrays de cosas y reducirlos a un solo valor
 
-    cuentaCarritoElement.innerHTML = cuenta;
+        const cuenta = memoria.reduce((acum, current) => acum+current.cantidad,0);
 
+        cuentaCarritoElement.innerHTML = cuenta;
+    } else {
+        cuentaCarritoElement.innerHTML = 0;
+    }
+    
 }
+
+actualizarNumeroCarrito();
 

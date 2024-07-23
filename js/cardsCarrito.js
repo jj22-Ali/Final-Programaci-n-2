@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const containerTarjetaCarrito = document.getElementById("container-carrito");
     const unidadesElement = document.getElementById("unidades");
     const precioElement = document.getElementById("precio");
+    const carritoVacioElment = document.getElementById("carrito-vacio");
+    const totalesElement = document.getElementById("totales")
+    const reiniciarCarritoElement = document.getElementById("reiniciar")
 
     function crearTarjetaCarrito(){
         containerTarjetaCarrito.innerHTML = "";
@@ -33,12 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     spanCantidad.textContent = cuenta;
                     actualizarNumeroCarrito();
                     actualizarTotales();
+                    revisarMensajesVacios();
                 });
                 btnMenos.addEventListener("click", () => {
                     const cuenta = restarAlCarrito(producto);
                     spanCantidad.textContent = cuenta;  
                     actualizarNumeroCarrito();
                     actualizarTotales();
+                    revisarMensajesVacios();
+
                     if (cuenta === 0) {
                         crearTarjetaCarrito();
                     }
@@ -56,7 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         
             });
-        } 
+        } else{
+            revisarMensajesVacios();
+        }
     }
     crearTarjetaCarrito();
     actualizarTotales();
@@ -72,8 +80,31 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             unidadesElement.innerText = unidades;
             precioElement.innerText = precio;
-            actualizarTotales();
+
         }
+
+
     }
+
+    function revisarMensajesVacios(){
+        const productos = JSON.parse(localStorage.getItem("frutas"));
+        console.log(productos, productos == true)
+        carritoVacioElment.classList.toggle("escondido", productos && productos.length > 0);
+        totalesElement.classList.toggle("escondido",!(productos && productos.length > 0));
+    }
+
+    reiniciarCarritoElement.addEventListener("click", reiniciarCarrito);
+    function reiniciarCarrito(){
+        localStorage.removeItem("frutas");
+        actualizarNumeroCarrito();
+        actualizarTotales();
+        crearTarjetaCarrito();
+    }
+
+    crearTarjetaCarrito();
+    actualizarNumeroCarrito();
+    actualizarTotales();
+    revisarMensajesVacios();     
+    
   
 })

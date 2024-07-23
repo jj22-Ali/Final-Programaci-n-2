@@ -69,13 +69,12 @@ main{
 
 .productoContainer{
 
-    border: 1px solid red;
     width: 100%;
     height: auto;
     text-align: center;
     font-size: 25px;
     color: #444;
-
+    
 }
 
 #container-frutas{
@@ -120,6 +119,9 @@ main{
     cursor: pointer;
 }
 
+.escondido{
+    display: none;
+}
 
 footer{
     background-color: transparent;
@@ -318,6 +320,19 @@ footer{
         width: 100%;
         height: auto;
         padding: 0;
+    }
+
+    #container-frutas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .boxVentaFruta{
+        width: 50%;
     }
 
     .boxfooter4 li{

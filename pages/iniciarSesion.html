@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rappi-Fruit</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/sesion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -18,13 +20,43 @@
                 <ul>
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="sucursales.html">SUCURSALES</a></li>
-                    <li id="active"><a href="pages/iniciarSesion.html">INICIAR SESION</a></li>
-                    <li><a href="carrito.html">CARRITO</a></li>
+                    <li id="active"><a href="iniciarSesion.html">INICIAR SESION</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="containerIniciarSesion">
+            <div id="boxBrand">
+                <h2>Rappi-Fruit</h2>
+            </div>
+            <div id="boxFormUser">
+                <form>
+                    <div id="form-input">
+                        <label for="emial">Correo</label>
+                        <input type="text" placeholder="asdf@gmail.com" id="emial">
+                    </div>
+                    <div id="form-input">
+                        <label for="cont">Contraseña</label>
+                        <input type="password" placeholder="contraseña" id="cont">
+                    </div>
+                    <div id="form-reg">
+                        <div>
+                            <input type="checkbox" id="rec">
+                            <label for="rec">Recordarme</label>
+                        </div>
+                        <div>
+                            <a href="">¿No tienes cuenta? Registrate</a>
+                        </div>
+                    </div>
+                    <div id="form-button">
+                        <button type="submit">Iniciar Sesion</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <div id="footer1">
             <div class="boxfooter1">
@@ -72,5 +104,8 @@
             <p>Desarrolado por JJAF</p>
         </div>
     </footer>
+    <script src="../js/frutas.js"></script>
+    <script src="../js/servicioCarrito.js"></script>
+    <script src="../js/cardsCarrito.js"></script>
 </body>
 </html>
