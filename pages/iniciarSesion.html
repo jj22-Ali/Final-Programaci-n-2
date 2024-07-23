@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi-Fruit</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/sesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h2 id="logo">Rappi-Fruit</h2>
+            </div>
+            <div id="nav-items">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="sucursales.html">SUCURSALES</a></li>
+                    <li id="active"><a href="iniciarSesion.html">INICIAR SESION</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="containerIniciarSesion">
+            <div id="boxBrand">
+                <h2>Rappi-Fruit</h2>
+            </div>
+            <div id="boxFormUser">
+                <form>
+                    <div id="form-input">
+                        <label for="emial">Correo</label>
+                        <input type="email" placeholder="asdf@gmail.com" id="emial" required>
+                    </div>
+                    <div id="form-input">
+                        <label for="cont">Contraseña</label>
+                        <input type="password" placeholder="contraseña" id="cont" required>
+                    </div>
+                    <div id="form-reg">
+                        <div>
+                            <input type="checkbox" id="rec">
+                            <label for="rec">Recordarme</label>
+                        </div>
+                        <div>
+                            <a href="">¿No tienes cuenta? Registrate</a>
+                        </div>
+                    </div>
+                    <div id="form-button">
+                        <button type="submit">Iniciar Sesion</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer1">
+            <div class="boxfooter1">
+                <h2>Rappi-Fruit</h2>
+            </div>
+            <div class="boxfooter2">
+                <h3>Menu</h3>
+                <ul class="footerList">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sucursales.html">sucursales</a></li>
+                    <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+            <div class="boxfooter3">
+                <h2>REGISTRATE Y TE DAMOS $20000.00</h2>
+                <button id="button1"><a href="">Regístrate</a></button>
+                <button id="button2"><a href="">Inicia Sesión</a></button>
+            </div>
+            <div class="boxfooter4">
+                <h2>MEDIOS DE PAGO</h2>
+                <ul>
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                    <li><i class="fa-solid fa-money-bill"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-solid fa-money-check"></i></li>
+                </ul>
+            </div>
+        </div> 
+        <div id="footer2">
+            <div class="redes">            
+                <h2>SEGUINOS EN NUESTRAS REDES</h2>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer3">
+            <p>&copy; 2024 Rappi-Fruit. Todo los derechos reservados.</p>
+            <p>Desarrolado por JJAF</p>
+        </div>
+    </footer>
+    <script src="../js/frutas.js"></script>
+    <script src="../js/servicioCarrito.js"></script>
+    <script src="../js/cardsCarrito.js"></script>
+</body>
+</html>

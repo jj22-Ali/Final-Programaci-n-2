@@ -1,0 +1,59 @@
+#carritoContainer{
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #444;
+
+}
+
+#container-carrito{
+    max-width: 600px;
+    margin: auto;
+}
+
+.boxCarritoFruta{
+    display: flex;
+    border: 1px solid #666;
+    border-radius: 5px;
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: center ;
+    justify-content: space-around;
+    margin: 10px 0;
+    background-color: whitesmoke;
+}
+
+.boxCarritoFruta h6{
+    font-size: 1.1em;
+    width: 130px;
+}
+
+.boxCarritoFruta img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.boxCarritoFruta button{
+    width: 30px;
+    height: 30px;
+    background-color: coral;
+    border-radius: 5px;
+    border: none;
+}
+
+#totales, #carrito-vacio{
+    text-align: center;
+    color: #444;
+    font-size: 1.3em;
+}
+
+#totales button{
+    width: 150px;
+    height: 30px;
+    background-color: coral;
+    border-radius: 5px;
+    border: none;
+}

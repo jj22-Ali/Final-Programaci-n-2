@@ -1,0 +1,97 @@
+#containerIniciarSesion{
+    border: 1px solid #0006;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #0006;
+}
+
+#boxBrand{
+    width: 25%;
+    text-align: center;
+    color: #333;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boxFormUser{
+    width: 75%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#form-input{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+#form-input input{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border-bottom: 2px solid #666;
+    border-radius: 4px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#form-input label{
+    font-size: 1.3em;
+}
+
+#form-reg{
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 0.8em;
+    color: #05f;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#form-reg a{
+    text-decoration: underline;
+}
+
+#form-button{
+    margin: 20px 0;
+}
+#form-button button{
+    padding: 6px 8px;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    #containerIniciarSesion{
+        flex-direction: column;
+    }
+    #boxBrand{
+        width: 100%;
+
+    }
+    
+    #boxFormUser{
+        width: 100%;
+    }
+
+    #form-input input{
+        width: 80%;
+    }
+
+}

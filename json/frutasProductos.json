@@ -1,0 +1,40 @@
+{
+    "productos":[
+        {   
+            "id":1,
+            "imagen": "../img/frutas/banana.jpg",
+            "nombre": "Banana",
+            "precio": 3000
+        },
+        {   
+            "id":2,
+            "imagen": "../img/frutas/manzana.jpg",
+            "nombre": "Manzana",
+            "precio": 5500
+        },
+        {   
+            "id":3,
+            "imagen": "../img/frutas/pera.jpg",
+            "nombre": "Pera",
+            "precio": 4500
+        },
+        {   
+            "id":4,
+            "imagen": "../img/frutas/durazno.jpg",
+            "nombre": "Durazno",
+            "precio": 6500
+        },
+        {   
+            "id":5,
+            "imagen": "../img/frutas/naranja.jpg",
+            "nombre": "Naranja",
+            "precio": 1500
+        },
+        {   
+            "id":6,
+            "imagen": "../img/frutas/mandarina.jpg",
+            "nombre": "Mandarina",
+            "precio": 1800
+        }
+    ]
+}

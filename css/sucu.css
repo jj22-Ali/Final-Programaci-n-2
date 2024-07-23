@@ -1,0 +1,59 @@
+#container-sucursales{
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+h2{
+    text-align: center;
+    color: #666;
+}
+
+.boxFruteria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid #0006;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.boxFruteria img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.listaFruteria{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.listaFruteria i , .boxFruteria i{
+    margin: 0 5px;
+}
+
+.boxFruteria span, .boxFruteria a{
+    font-size: 1.1em;
+    color: coral; 
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .boxFruteria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+}

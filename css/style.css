@@ -1,0 +1,370 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(32, 255, 32),#fff);
+}
+
+header{
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+#nav-items{
+    box-sizing: border-box;
+}
+
+#logo{
+    letter-spacing: 2px;
+}
+
+#cuenta-carrito{
+    background-color: rgb(253, 138, 138);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1; /*para que se tome el aspecto redondo*/
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 5px;
+    padding: 15px;
+    font-size: 0.9em;
+}
+a{
+    text-decoration: none;
+    color: #333;
+
+}
+#active{
+    border: 1px solid #0006;
+    border-radius: 5px;
+    background-color: rgb(253, 138, 138);
+}
+
+main{
+    flex-grow: 1;
+
+}
+
+.productoContainer{
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #444;
+    
+}
+
+#container-frutas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.boxVentaFruta{
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: auto;
+    width: 23%;
+    margin: 10px 0;
+    font-size: 0.7em;
+    background-color: #FFF;
+    color: #333;
+    box-shadow: 0 0 15px #0006;
+    padding: 20px;
+}
+
+.boxVentaFruta img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    object-fit: cover;
+}
+
+.boxVentaFruta h6, p{
+    margin: 10px 0;
+}
+
+.boxVentaFruta button{
+    border: none;
+    padding: 20px;
+    background-color: coral;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.escondido{
+    display: none;
+}
+
+footer{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+#footer1 h2{
+    color: #555;
+}
+.boxfooter1{
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.boxfooter2{
+    width: 25%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #555;
+}
+
+.footerList{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerList li{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.boxfooter3{
+    width: 25%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.boxfooter3 button{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.boxfooter4{
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.boxfooter4 ul{
+    padding: 0;
+}
+
+.boxfooter4 li{
+    margin: 0;
+    padding: 5;
+    font-size: 2em;
+}
+
+#button1{
+    background-color: #ff3;
+}
+
+#button2{
+    background-color: #f44;
+}
+
+.boxfooter3 a{
+    color: #333;
+}
+
+#footer2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #555;
+
+}
+
+#footer2 h2{
+    color: #555;
+}
+
+#footer2 ul{
+    padding: 0;
+}
+
+#footer2 li{
+    font-size: 25px;
+}
+
+#footer3{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/*agregado con chatgpt*/
+@media (max-width: 1200px) {
+    .boxfooter1, .boxfooter2, .boxfooter3, .boxfooter4 {
+        width: 50%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxfooter1, .boxfooter2, .boxfooter3, .boxfooter4 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .boxfooter1{
+        height: 100px;
+        font-size: 1em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+ 
+
+    li {
+        margin: 5px 0;
+    }
+
+    .footerList li {
+        font-size: 1em;
+    }
+
+    .footerList{
+        flex-direction: row;
+    }
+
+    .boxfooter3 button {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #nav-items{
+        font-size: 0.8em;
+    }
+    #nav-items ul{
+        padding: 0;
+    }
+    #nav-items li{
+        padding: 10px;
+    }
+
+    .boxfooter1, .boxfooter2, .boxfooter3, .boxfooter4 {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    #container-frutas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .boxVentaFruta{
+        width: 50%;
+    }
+
+    .boxfooter4 li{
+        font-size: 1.2em;
+    }
+
+
+    body {
+        font-size: 14px;
+    }
+
+    .footerList li {
+        font-size: 0.9em;
+    }
+
+    .footerList{
+        padding: 0;
+    }
+
+    #footer2 li{
+        font-size: 1.2em;
+    }
+
+    .boxfooter3 button {
+        font-size: 0.7em;
+        padding: 10px;
+    }
+}
