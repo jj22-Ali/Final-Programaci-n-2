@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rappi-Fruit</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/sucu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -17,14 +19,44 @@
             <div id="nav-items">
                 <ul>
                     <li><a href="../index.html">INICIO</a></li>
-                    <li id="active"><a href="pages/sucursales.html">SUCURSALES</a></li>
+                    <li id="active"><a href="sucursales.html">SUCURSALES</a></li>
                     <li><a href="iniciarSesion.html">INICIAR SESION</a></li>
-                    <li><a href="carrito.html">CARRITO</a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="cuenta-carrito">0</span></a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="container-sucursales">
+            <div>
+                <h2>Sucursal Rappi-Fruit Central</h2>
+                <div class="boxFruteria">
+                    <img src="../img/frutas/fruteria1.jpg" alt="sucursal-central">
+                    <ul class="listaFruteria">
+                        <li><i class="fa-solid fa-map-pin"></i>Dirección: Belgrano 5000</li>
+                        <li><i class="fa-solid fa-phone"></i>telefono: (+54) 3863-530-391</li>
+                        <li><i class="fa-solid fa-shop"></i>horarios: 8:30 a 13:00 / 17:30 a 21:00</li>
+                    </ul>
+                    <a href=""><i class="fa-solid fa-map-location-dot"></i>Ver ubicacion en google Maps</a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Sucursal Rappi-Fruit Monzon</h2>
+                <div class="boxFruteria">
+                    <img src="../img/frutas/fruteria2.jpg" alt="sucursal-central">
+                    <ul class="listaFruteria">
+                        <li><i class="fa-solid fa-map-pin"></i>Dirección: J.M.Monzon 58</li>
+                        <li><i class="fa-solid fa-phone"></i>telefono: (+54) 3863-123-921</li>
+                        <li><i class="fa-solid fa-shop"></i>horarios: 8:30 a 13:00 / 17:30 a 21:00</li>
+                    </ul>
+                    <a href=""><i class="fa-solid fa-map-location-dot"></i>Ver ubicacion en google Maps</a>
+                </div>
+            </div>
+
+            <div></div>
+        </section>
+    </main>
     <footer>
         <div id="footer1">
             <div class="boxfooter1">
@@ -72,5 +104,8 @@
             <p>Desarrolado por JJAF</p>
         </div>
     </footer>
+    <script src="../js/frutas.js"></script>
+    <script src="../js/servicioCarrito.js"></script>
+    <script src="../js/cardsCarrito.js"></script>
 </body>
 </html>

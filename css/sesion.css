@@ -74,3 +74,24 @@
 }
 
 
+
+
+@media (max-width: 480px) {
+
+    #containerIniciarSesion{
+        flex-direction: column;
+    }
+    #boxBrand{
+        width: 100%;
+
+    }
+    
+    #boxFormUser{
+        width: 100%;
+    }
+
+    #form-input input{
+        width: 80%;
+    }
+
+}
